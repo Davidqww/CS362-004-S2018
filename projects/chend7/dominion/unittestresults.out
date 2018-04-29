@@ -1,0 +1,269 @@
+unittestresults.out
+
+------------------------------ TESTING FUNCTION : isGameOver() ------------------------------
+
+Empty out Province card - game ends
+Expected value: 1	Actual value: 1
+::TEST PASSED
+
+Empty out three supply pile - game ends
+Expected value: 1	Actual value: 1
+::TEST PASSED
+
+Put back a supply pile - game continues
+Expected value: 0	Actual value: 0
+::TEST PASSED
+
+TEST SUCCESSFULL
+File 'dominion.c'
+Lines executed:17.49% of 566
+Creating 'dominion.c.gcov'
+
+
+------------------------------ TESTING FUNCTION : gainCard() ------------------------------
+
+Empty out village pile and try to gain village card
+Expected value: -1	Actual value: -1
+::TEST PASSED
+
+Add smithy card from supply pile to discard pile
+Expected value: 1	Actual value: 1
+::TEST PASSED
+
+Should have one less card in smithy pile
+Expected value: 9	Actual value: 9
+::TEST PASSED
+
+Add smithy card from supply pile to deck
+Expected value: 6	Actual value: 6
+::TEST PASSED
+
+Should have one less card in smithy pile
+Expected value: 8	Actual value: 8
+::TEST PASSED
+
+Add smithy card from supply pile to deck
+Expected value: 6	Actual value: 6
+::TEST PASSED
+
+Should have one less card in smithy pile
+Expected value: 7	Actual value: 7
+::TEST PASSED
+
+TEST SUCCESSFULL
+File 'dominion.c'
+Lines executed:20.14% of 566
+Creating 'dominion.c.gcov'
+
+
+------------------------------ TESTING FUNCTION : scoreFor() ------------------------------
+
+Player1 starting score should be 3
+Expected value: 3	Actual value: 1
+::TEST FAILED
+
+Gain an estate card in discard pile, score increased by 1
+Expected value: 4	Actual value: 4
+::TEST PASSED
+
+Gain a duchy card in deck, score should be 7
+Expected value: 3	Actual value: 7
+::TEST FAILED
+
+Gain a province card in hand, score should be 13
+Expected value: 13	Actual value: 9
+::TEST FAILED
+
+Gain a curse card in hand, score should be 12
+Expected value: 12	Actual value: 8
+::TEST FAILED
+
+Player2 starting score should be 3
+Expected value: 3	Actual value: 0
+::TEST FAILED
+
+Player2 victory points is unchanged :: Victory Point Count
+Expected value: 0	Actual value: 0
+::TEST PASSED
+
+
+TEST(S) FAILED : 5 FAILURES
+File 'dominion.c'
+Lines executed:24.38% of 566
+Creating 'dominion.c.gcov'
+
+
+------------------------------ TESTING FUNCTION : supplyCount() ------------------------------
+
+Check supply count for a card not in any of the 10 supply pile
+Expected value: -1	Actual value: -1
+::TEST PASSED
+
+Supply count of smithy should start off at 10
+Expected value: 10	Actual value: 10
+::TEST PASSED
+
+Player1 gains smithy card from supply pile. Supply count of smithy decreases by 1
+Expected value: 9	Actual value: 9
+::TEST PASSED
+
+Player2 gains smithy card from supply pile. Supply count of smithy decreases by 1
+Expected value: 8	Actual value: 8
+::TEST PASSED
+
+TEST SUCCESSFULL
+File 'dominion.c'
+Lines executed:24.38% of 566
+Creating 'dominion.c.gcov'
+
+
+------------------------------ TESTING CARD : Adventurer ------------------------------
+
+Print deck order: 5
+Smithy
+Smithy
+Copper
+Copper
+Copper
+
+Player1 has 2 cards in discard pile (discarded 2 smithy) :: Discard Count
+Expected value: 2	Actual value: 2
+::TEST PASSED
+
+Player1 has 1 card in deck pile (discarded 2 smithy, added 2 copper to hand) :: Deck Count
+Expected value: 1	Actual value: 0
+::TEST FAILED
+
+Player1 gains two more treasure cards in hand
+Expected value: 6	Actual value: 7
+::TEST FAILED
+
+Player1 has one more card in hand (+2 treasure -1 adventurer) :: Hand Count
+Expected value: 6	Actual value: 8
+::TEST FAILED
+
+Player1 victory points is unchanged :: Victory Point Count
+Expected value: 1	Actual value: 1
+::TEST PASSED
+
+Player2 hand is unaffected :: Hand Count
+Expected value: 0	Actual value: 0
+::TEST PASSED
+
+Player2 deck is unaffected :: Deck Count
+Expected value: 10	Actual value: 10
+::TEST PASSED
+
+Player2 victory points is unchanged :: Victory Point Count
+Expected value: 0	Actual value: 0
+::TEST PASSED
+
+TEST(S) FAILED : 3 FAILURES
+File 'dominion.c'
+Lines executed:29.33% of 566
+Creating 'dominion.c.gcov'
+
+
+------------------------------ TESTING CARD : Smithy ------------------------------
+
+Player1 has two more cards in hand (+3 draw -1 smithy) :: Hand Count
+Expected value: 7	Actual value: 6
+::TEST FAILED
+
+Player1 deck pile has three less cards :: Deck count
+Expected value: 2	Actual value: 3
+::TEST FAILED
+
+Player1 victory points is unchanged :: Victory Point Count
+Expected value: 1	Actual value: 1
+::TEST PASSED
+
+Player2 hand is unaffected :: Hand Count
+Expected value: 0	Actual value: 0
+::TEST PASSED
+
+Player2 deck is unaffected :: Deck Count
+Expected value: 10	Actual value: 10
+::TEST PASSED
+
+Player2 victory points is unchanged :: Victory Point Count
+Expected value: 0	Actual value: 0
+::TEST PASSED
+
+TEST(S) FAILED : 2 FAILURES
+File 'dominion.c'
+Lines executed:32.69% of 566
+Creating 'dominion.c.gcov'
+
+
+------------------------------ TESTING CARD : Village ------------------------------
+
+Player1 has same number of cards in hand (+1 draw -1 village) :: Hand Count
+Expected value: 5	Actual value: 5
+::TEST PASSED
+
+PLayer1 deck pile has one less card :: Deck Pile Count
+Expected value: 4	Actual value: 4
+::TEST PASSED
+
+Player1 has two more actions :: Action Count
+Expected value: 3	Actual value: 4
+::TEST FAILED
+
+Player1 victory points is unchanged :: Victory Point Count
+Expected value: 1	Actual value: 1
+::TEST PASSED
+
+Player2 hand is unaffected :: Hand Count
+Expected value: 0	Actual value: 0
+::TEST PASSED
+
+Player2 deck is unaffected :: Deck Count
+Expected value: 10	Actual value: 10
+::TEST PASSED
+
+Player2 victory points is unchanged :: Victory Point Count
+Expected value: 0	Actual value: 0
+::TEST PASSED
+
+TEST(S) FAILED : 1 FAILURES
+File 'dominion.c'
+Lines executed:34.10% of 566
+Creating 'dominion.c.gcov'
+
+
+------------------------------ TESTING CARD : Great Hall ------------------------------
+
+Player1 has same number of cards in hand (+1 draw -1 great_hall) :: Hand Count
+Expected value: 5	Actual value: 5
+::TEST PASSED
+
+Player1 deck pile has one less card :: Deck Pile Count
+Expected value: 4	Actual value: 4
+::TEST PASSED
+
+Player1 gets an additional action :: Action Count
+Expected value: 2	Actual value: 2
+::TEST PASSED
+
+Player1 gains a victory point :: Victory Point Count
+Expected value: 2	Actual value: 3
+::TEST FAILED
+
+Player2 hand is unaffected :: Hand Count
+Expected value: 0	Actual value: 0
+::TEST PASSED
+
+Player2 deck is unaffected :: Deck Count
+Expected value: 10	Actual value: 10
+::TEST PASSED
+
+Player2 victory points is unchanged :: Victory Point Count
+Expected value: 0	Actual value: 0
+::TEST PASSED
+
+TEST(S) FAILED : 1 FAILURES
+File 'dominion.c'
+Lines executed:34.81% of 566
+Creating 'dominion.c.gcov'
+

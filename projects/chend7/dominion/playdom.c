@@ -20,6 +20,8 @@ int main (int argc, char** argv) {
   int numSmithies = 0;
   int numAdventurers = 0;
 
+  printf ("Player 0: %d\nPlayer 1: %d\n", scoreFor(0, &G), scoreFor(1, &G));
+
   while (!isGameOver(&G)) {
     money = 0;
     smithyPos = -1;
