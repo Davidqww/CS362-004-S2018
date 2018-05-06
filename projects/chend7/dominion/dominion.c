@@ -661,7 +661,6 @@ void play_adventurer(struct gameState *state) {
   int temphand[MAX_HAND];
   int currentPlayer = whoseTurn(state);
   int drawntreasure = 0, cardDrawn = 0, z = 0;
-
   // Introduce bug - continue drawing until player receive 3 treasures instead of original 2
   while(drawntreasure<3){
     if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck

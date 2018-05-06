@@ -1,0 +1,16 @@
+randomtestcard1
+
+------------------------------ Randomtest : Smithy ------------------------------
+
+NUMBER OF ITERATION(S): 500
+NUMBER OF FAILED ITERATIONS: 500
+cardEffectFailCount: 0
+drawCardFailCount: 0
+handFailCount: 500
+deckFailCount: 500
+discardFailCount: 0
+discardCardFailCount: 0
+File 'dominion.c'
+Lines executed:16.43% of 566
+Creating 'dominion.c.gcov'
+

@@ -1,0 +1,17 @@
+randomtestcard2
+
+------------------------------ Randomtest : Village ------------------------------
+
+NUMBER OF ITERATION(S): 500
+NUMBER OF FAILED ITERATIONS: 500
+cardEffectFailCount: 0
+drawCardFailCount: 0
+handFailCount: 0
+deckFailCount: 0
+discardFailCount: 0
+discardCardFailCount: 0
+actionFailCount: 500
+File 'dominion.c'
+Lines executed:17.84% of 566
+Creating 'dominion.c.gcov'
+
