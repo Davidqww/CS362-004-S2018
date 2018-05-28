@@ -1,0 +1,10 @@
+randomtestcard2
+
+------------------------------ Randomtest : Village ------------------------------
+
+NUMBER OF ITERATION(S): 500
+ALL RANDOM TEST ITERATIONS PASSED
+File 'dominion.c'
+Lines executed:37.63% of 566
+Creating 'dominion.c.gcov'
+

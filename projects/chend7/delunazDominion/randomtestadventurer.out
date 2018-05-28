@@ -1,0 +1,16 @@
+randomtestadventurer
+
+------------------------------ Randomtest : Adventurer ------------------------------
+
+NUMBER OF ITERATION(S): 1000
+NUMBER OF FAILED ITERATIONS: 1000
+cardEffectFailCount: 0
+drawCardFailCount: 0
+treasureFailCount: 0
+handFailCount: 0
+deckFailCount: 491
+discardFailCount: 994
+File 'dominion.c'
+Lines executed:37.46% of 566
+Creating 'dominion.c.gcov'
+
